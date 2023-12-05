@@ -1,0 +1,48 @@
+@import "../utils";
+
+.#{$prefix}navbar {
+  width: 80px;
+  background: $black2;
+  flex-shrink: 0;
+
+  .logo {
+    color: white;
+    height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+    }
+  }
+}
+
+.nav-links {
+  a {
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    text-decoration: none;
+    @include screen-up(sm) {
+      margin-bottom: 22px;
+    }
+    span {
+      visibility: hidden;
+    }
+    &.active,
+    &:hover {
+      span {
+        visibility: visible;
+      }
+      .icon {
+        color: white !important;
+      }
+    }
+  }
+}

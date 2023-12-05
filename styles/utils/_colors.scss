@@ -1,0 +1,33 @@
+$black1: rgba(23, 23, 23, 1);
+$black2: rgb(28, 28, 28);
+$black3: rgba(24, 24, 24, 0.2);
+$black4: rgba(24, 24, 24, 1);
+$gray1: rgba(93, 93, 93);
+$gray2: rgba(139, 139, 139);
+$gray3: #b2b2b2;
+$gray4: rgba(255, 255, 255, 0.5);
+$orange: #ff9b33;
+
+.bg-black1 {
+  background-color: $black1;
+}
+.bg-black2 {
+  background-color: $black2;
+}
+.bg-black3 {
+  background-color: $black3;
+}
+
+.bg-white-opacity-6 {
+  background-color: rgba(255, 255, 255, 0.06);
+}
+.bg-navigation {
+  background-image: url(../../public/images/navigation__mobile.png);
+}
+
+.text-gray-3 {
+  color: $gray3;
+}
+.text-gray-4 {
+  color: $gray4;
+}

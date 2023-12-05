@@ -1,0 +1,7 @@
+@import "../utils";
+
+.#{$prefix}follows {
+  width: 375px;
+  background: $black2;
+  flex-shrink: 0;
+}

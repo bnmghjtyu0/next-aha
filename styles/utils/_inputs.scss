@@ -1,0 +1,18 @@
+@import "./colors";
+
+.input-transparent {
+  border: 3px solid $gray2;
+  border-radius: 6px;
+  height: 60px;
+  background-color: transparent;
+  color: white !important;
+  &::placeholder {
+    color: $gray1;
+    opacity: 1;
+  }
+
+  &:focus {
+    background-color: transparent;
+    border: 3px solid $orange;
+  }
+}

@@ -1,0 +1,48 @@
+/* mobile */
+$xs: 0;
+/* tablet vertical */
+$sm: 768px;
+/* tablet horizontal */
+$md: 992px;
+/* laptop */
+$xl: 1200px;
+/* desktop */
+$xxl: 1440px;
+
+@mixin screen-up($size) {
+  //mobile
+  @if $size == "xs" {
+    @media screen and (min-width: $xs) {
+      @content;
+    }
+  }
+  //tablet
+  @else if $size == "sm" {
+    @media screen and (min-width: $sm) {
+      @content;
+    }
+  }
+
+  //tablet
+  @else if $size == "md" {
+    @media screen and (min-width: $md) {
+      @content;
+    }
+  }
+
+  //laptop
+  @else if $size == "xl" {
+    @media screen and (min-width: $xl) {
+      @content;
+    }
+  }
+
+  //desktop
+  @else if $size == "xxl" {
+    @media screen and (min-width: $xxl) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}

@@ -1,0 +1,21 @@
+//override
+svg {
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+path {
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+.icon {
+  display: inline-block;
+}
+.icon-white {
+  color: #fff !important;
+}
+
+.icon-gray {
+  color: #8a8a8f !important;
+}

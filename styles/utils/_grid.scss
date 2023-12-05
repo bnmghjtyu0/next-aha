@@ -1,0 +1,40 @@
+@import "./variables";
+
+.d-sm-block {
+  @include screen-up(sm) {
+    display: block !important;
+  }
+}
+
+.d-xxl-block {
+  @include screen-up(xxl) {
+    display: block !important;
+  }
+}
+.d-sm-none {
+  display: none;
+  @include screen-up(sm) {
+    display: block;
+  }
+}
+
+.#{$prefix}container {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @include screen-up(sm) {
+    padding-left: 130px !important;
+    padding-right: 130px !important;
+  }
+}
+
+.col-sm-5 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  @include screen-up(sm) {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}

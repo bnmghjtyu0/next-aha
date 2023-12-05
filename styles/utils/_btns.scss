@@ -1,0 +1,30 @@
+@import "./media-query";
+
+.btn-outline-white {
+  border-width: 1px;
+  border-color: #fff;
+  border-style: solid;
+  background-color: transparent;
+  color: #fff;
+  font-weight: 600;
+  &.active,
+  &:hover {
+    background-color: #fff;
+    color: #000;
+  }
+}
+
+.btn-white {
+  background-color: #fff;
+}
+
+.btn-md {
+  font-size: 14px;
+}
+
+.btn-xxl {
+  width: 100%;
+  @include screen-up(sm) {
+    width: 313px;
+  }
+}
